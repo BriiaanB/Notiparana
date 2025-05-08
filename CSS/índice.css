@@ -1,0 +1,502 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   padding-top: 130px;
+}
+
+header {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   background-color: #1c1c1c;
+   position: fixed;
+   width: 100%;
+   top: 0px;
+   z-index: 100000;
+}
+
+.logo {
+   max-width: 4rem;
+   position: static;
+   z-index: 100;
+}
+
+.zonaa {
+    position: absolute;
+    display: inline-block;
+    background-color: #CB4335;
+    left: 0;
+    padding: 2px 4px;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.abrir-menu,
+.cerrar-menu {
+   display: none;
+}
+
+.barras {
+   color: #ffffff;
+}
+
+.nav-list {
+   list-style-type: none;
+   display: flex;
+   margin-top: 1em;
+   margin-bottom: 1em;
+   z-index: 1000;
+   position: relative;
+}
+
+.nav-list li {
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   font-size: 1.2em;
+   margin-right: 1rem;
+   padding: .2em .2em .2em .2em;
+   position: relative;
+   top: .9em;
+}
+
+.nav-list li a {
+   text-decoration: none;
+   color: #ffffff;
+}
+
+.nav-list li:hover {
+   background-color: rgb(255, 0, 0);
+}
+
+.pagina-seleccionada {
+   background-color: #ad2e2e;
+}
+
+.nav-list-secundario {
+   list-style-type: none;
+   position: absolute;
+   background-color: #1c1c1c;
+   height: 250px;
+   top: -1000px;
+   right: 1px;
+   z-index: -100;
+   font-size: 16px;
+   width: 180px;
+
+}
+
+.nav-list-secundario li {
+   width: 100%;
+   padding-left: 10px;
+}
+
+.nav-list-secundario li a {
+   text-decoration: none;
+   color: #ffffff;
+}
+
+.nav-list .mas-noticias:hover {
+   background-color: #1c1c1c;
+}
+
+.mas-noticias:hover > .nav-list-secundario {
+   top: 20px;
+}
+
+.mas-noticias .flecha {
+   padding-left: 7px;
+   color: #ececec;
+}
+
+.nube {
+   padding-left: 6px;
+}
+
+.maletin {
+   padding-left: 6px;
+}
+
+.hola:hover > i{
+   color: #ad2e2e;
+}
+
+article {
+   display: flex;
+   justify-content: center;
+   width: 400px;
+   height: 300px;
+   outline: solid #0000005b 1px;
+   position: relative;
+   margin: 10px;
+}
+
+article img {
+   object-fit: cover;
+   width: 100%;
+   height: 100%;
+}
+
+.titulo1 {
+   position: absolute;
+   bottom: 0px;
+   background-color: #1c1c1cb4;
+   width: 100%;
+   height: 100px;
+   display: grid;
+   place-items: center;
+   text-align: center;
+   padding: 3px;
+   color: #ffffff;
+}
+
+.seccion-principal {
+   display: flex;
+   width: 100%;
+   flex-wrap: wrap;
+   justify-content: center;
+}
+
+.encabezado {
+   position: absolute;
+   top: 73px;
+   border: solid #000000 1px;
+   width: 100%;
+   padding: 3px 10px;
+}
+
+a {
+   text-decoration: none;
+   font-family:sans-serif;
+   color: #000000;
+}
+
+.margen-derecho {
+   margin-right: 50px;
+}
+
+.fondo-marcado {
+   color: #ad2e2e;
+}
+
+@media screen and (max-width: 440px) {
+   article {
+      width: 390px;
+      height: 250px;
+   }
+   .titulo1 {
+      height: 70px;
+      font-size: 22px;
+      height: 90px;
+   }
+}
+
+@media screen and (max-width: 413px) {
+   article {
+      width: 350px;
+      height: 250px;
+   }
+
+   .titulo1 {
+      font-size: 22px;
+   }
+}
+
+@media screen and (max-width: 400px) {
+   .encabezado {
+      font-size: 20px;
+   }
+   body {
+      padding-top:120px;
+   }
+}
+
+@media screen and (max-width: 375px) {
+   article {
+         width: 320px;
+         height: 250px;
+      }
+   
+      .titulo1 {
+         font-size: 22px;
+      }
+}
+
+@media screen and (max-width:360px) {
+   .nav-list-secundario li {
+         width: 20%;
+         line-height: 15px;
+      }
+   
+      .mas-noticias:hover > .nav-list-secundario {
+         top: 1100px;
+         left: 0em;
+      }
+      .nav-list-secundario {
+         width: 150px;
+         font-size: 13px;
+         height: 260px;
+         margin-left: 0px;
+         margin-top: 0px;
+      }
+      .fondo {
+         width: 100px;
+      }
+}
+
+@media screen and (max-width: 340px) {
+   article {
+      width: 300px;
+      height: 250px;
+   }
+
+   .titulo1 {
+      font-size: 20px;
+   }
+      .nav-list-secundario {
+         width: 150px;
+         font-size: 13px;
+         height: 260px;
+         margin-left: 0px;
+         margin-top: 0px;
+         padding-top: 13px;
+      }
+}
+
+
+
+@media screen and (max-width: 327px) {
+   article {
+         width: 270px;
+         height: 200px;
+      }
+   
+      .titulo1 {
+         height: 80px;
+         font-size: 17px;
+      }
+}
+
+@media screen and (max-width:312px) {
+   .nav-list-secundario li {
+      width: 100%;
+      line-height: 15px;
+      padding-right: -10px;
+   }
+
+   .mas-noticias:hover>.nav-list-secundario {
+      left: 0em;
+   }
+
+   .nav-list-secundario {
+      width: 150px;
+      font-size: 13px;
+      margin-left: 10px;
+   }
+}
+
+@media screen and (max-width: 300px) {
+   article {
+      width: 240px;
+      height: 200px;
+   }
+
+   .titulo1 {
+      height: 80px;
+      font-size: 15px;
+   }
+      .nav-list-secundario li {
+         width: 100%;
+         padding-left: 10px;
+         line-height: 15px;
+      }
+   
+      .mas-noticias:hover>.nav-list-secundario {
+         left: 0em;
+      }
+   
+      .nav-list-secundario {
+         width: 150px;
+         font-size: 13px;
+         margin-left: 10px;
+         margin-top: 67px;
+      }
+
+}
+
+@media screen and (max-width: 260px) {
+   article {
+      width: 200px;
+      height: 200px;
+   }
+
+   .titulo1 {
+      height: 80px;
+      font-size: 15px;
+   }
+}
+
+@media screen and (max-width: 240px) {
+   .nav-list-secundario li {
+         width: 100%;
+         padding-left: 10px;
+         line-height: 15px;
+      }
+   
+      .mas-noticias:hover>.nav-list-secundario {
+         left: 0em;
+      }
+   
+      .nav-list-secundario {
+         width: 150px;
+         font-size: 13px;
+         margin-left: 60px;
+         margin-top: 67px;
+      }
+}
+
+@media screen and (max-width: 193px) {
+   .nav-list-secundario li {
+         width: 100%;
+         padding-left: 10px;
+         line-height: 15px;
+      }
+   
+      .mas-noticias:hover>.nav-list-secundario {
+         left: 0em;
+      }
+   
+      .nav-list-secundario {
+         width: 150px;
+         font-size: 13px;
+         margin-left: 60px;
+         margin-top: 50px;
+      }
+}
+
+@media screen and (max-width: 700px) {
+
+   .abrir-menu,
+   .cerrar-menu {
+      display: block;
+      border: 0;
+      font-size: 1.25rem;
+      background-color: transparent;
+      cursor: pointer;
+   }
+
+
+   .cerrar-menu {
+      position: relative;
+      font-size: 2em;
+      top: -.80em;
+      padding: 10px 20px 10px 15px;
+      right: -25px;
+   }
+
+   .abrir-menu {
+      margin-right: .3em;
+      font-size: 2em;
+      padding: 10px 16px 10px 10px;
+   }
+
+   .nav-list li {
+      margin-top: 1em;
+      top: -10px;
+   }
+
+   .abrir-menu {
+      color: #1c1c1c;
+   }
+
+   .cerrar-menu {
+      color: #ececec;
+   }
+
+   .nav {
+      opacity: 0;
+      visibility: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: end;
+      gap: 1rem;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #1c1c1c;
+      padding: 2rem;
+   }
+
+   .nav.visible {
+      opacity: 1;
+      visibility: visible;
+   }
+
+   .nav-list {
+      flex-direction: column;
+      align-items: end;
+      background-color: #1c1c1c;
+      padding-bottom: 100vh;
+      padding-left: 1em;
+      position: relative;
+      right: -2em;
+      top: -3.5em;
+   }
+
+   .nav-list li a {
+      color: #ecececec;
+   }
+
+   .margen-derecho {
+      margin-right: 0;
+   }
+   .nav-list-secundario li {
+         width: 150px;
+         padding-left: 10px;
+         line-height: 15px;
+      }
+      .mas-noticias:hover>.nav-list-secundario {
+         top: -160px;
+         left: -11em;
+      }
+      .nav-list-secundario {
+         height: 300px;
+      }
+}
+
+@media screen and (max-width: 340px) {
+   .nav-list li {
+      font-size: 1.1em;
+   }
+}
+
+@media screen and (max-width: 300px) {
+   .nav-list li {
+      font-size: .7em;
+      }
+}
+
+@media screen and (max-width: 260px) {
+   .encabezado {
+      font-size: 15px;
+      top: 73px;
+   }
+   body {
+      padding-top: 115px;
+   }
+}
+
+@media screen and (max-width: 214px) {
+   article {
+         width: 150px;
+         height: 130px;
+      }
+   
+      .titulo1 {
+         height: 80px;
+         font-size: 11px;
+      }
+}
